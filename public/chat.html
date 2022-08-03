@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chat App</title>
+    <style type="text/css" media="screen">
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: red;
+        justify-content: center;
+      }
+
+      #messages {
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card {
+        background-color: hsl(250, 10%, 95%);
+        margin-top: 2rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        word-break: break-word;
+      }
+
+      .from-self {
+        background-color: hsl(250, 35%, 75%);
+        color: hsl(250, 20%, 100%);
+        margin-left: 4rem;
+        align-self: flex-end;
+      }
+
+      .from-others {
+        color: hsl(0, 0%, 20%);
+        margin-right: 4rem;
+        align-self: flex-start;
+      }
+
+      .from-others .name {
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+      }
+
+      form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+      }
+      input {
+        background-color: hsl(0, 0%, 90%);
+        border-radius: 0.5rem;
+        width: 100%;
+        padding: 0.9rem;
+        margin-left: 2rem;
+        border: none;
+      }
+      button {
+        margin: 0 2rem;
+        padding: 0.9rem;
+        border-radius: 0.5rem;
+        background-color: hsl(250, 35%, 75%);
+        border: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="messages">
+      <div class="from-self card">
+        <div>
+          <div class="name"></div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In placerat,
+          ante a accumsan tempor, nisi est consequat eros,
+        </div>
+      </div>
+      <!--   <div class="from-others card">
+          <div class="name">John Doe</div>
+          <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+            placerat, ante a accumsan tempor,
+          </div>
+        </div>-->
+    </div>
+
+    <form id="form">
+      <input type="text" id="input" autocomplete="off" />
+      <button>Send</button>
+    </form>
+
+    <script>
+      const body = document.querySelector("body");
+
+      body.style.height = `${innerHeight}px`;
+    </script>
+  </body>
+</html>

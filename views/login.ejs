@@ -1,0 +1,54 @@
+<%- contentFor('title') %> Login Page <%- contentFor('main') %>
+<div class="h-full flex justify-center items-center">
+  <form method="post" action="/login" class="h-max space-y-6">
+    <div>
+      <% if(error) { %>
+      <div><%= error %></div>
+      <% } %> <% if(success) { %>
+      <div><%= success %></div>
+      <% } %>
+    </div>
+    <div>
+      <input
+        class="border-b-2 border-blue-500 focus:outline-none"
+        type="text"
+        name="username"
+        id="username"
+        placeholder="username"
+        autocomplete="off"
+        pattern="[a-z0-9_]{3,}"
+        maxlength="30"
+        required
+      />
+    </div>
+    <div>
+      <input
+        class="border-b-2 border-blue-500 focus:outline-none"
+        type="password"
+        name="password"
+        id="password"
+        placeholder="password"
+        autocomplete="off"
+        minlength="8"
+        required
+      />
+    </div>
+    <button class="text-center font-bold p-1 w-full bg-blue-500 text-white">
+      Login
+    </button>
+  </form>
+</div>
+<script charset="utf-8">
+  let resize = false;
+  let currentIH = this.innerHeight;
+  this.addEventListener("resize", (e) => {
+    if (this.innerHeight < currentIH && !resize) {
+      body.style.height = this.innerHeight + "px";
+      resize = true;
+    }
+    if (this.innerHeight > currentIH && resize) {
+      body.style.height = this.innerHeight + "px";
+      resize = false;
+    }
+  });
+</script>

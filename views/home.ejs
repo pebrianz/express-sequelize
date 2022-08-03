@@ -1,0 +1,57 @@
+<<%- contentFor('title') %> Home Page <%- contentFor('main') %>
+<div class="h-full relative p-6 subpixel-antialiased">
+  <div id="messages" class="space-y-6 flex flex-col">
+    <div id="message" class="px-4 bg-gray-100 py-2 w-10/12 rounded-md">
+      <div class="text-slate-900 font-semibold text-lg">John Doe</div>
+      <div class="text-slate-600">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      </div>
+    </div>
+    <div id="message" class="px-4 py-2 w-10/12 rounded-md bg-gray-100">
+      <div class="text-slate-900 font-semibold text-lg">John Doe</div>
+      <div class="text-slate-600">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      </div>
+    </div>
+    <div
+      id="message"
+      class="px-4 py-2 w-10/12 rounded-md bg-slate-900 self-end"
+    >
+      <div class="text-slate-300">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      </div>
+    </div>
+    <div id="message" class="px-4 bg-gray-100 py-2 w-10/12 rounded-md">
+      <div class="text-slate-900 font-semibold text-lg">John Doe</div>
+      <div class="text-slate-600">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      </div>
+    </div>
+    <div
+      id="message"
+      class="px-4 py-2 w-10/12 rounded-md bg-slate-900 self-end"
+    >
+      <div class="text-slate-300">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      </div>
+    </div>
+  </div>
+  <form
+    method="post"
+    action="/home"
+    class="flex justify-between fixed bottom-0 mx-6 my-6 left-0 right-0 space-x-6"
+  >
+    <input
+      class="bg-gray-100 p-2 rounded-md flex-auto"
+      type="text"
+      name="message"
+      id="message"
+    />
+    <button class="bg-slate-900 font-bold text-white p-2 rounded-md">
+      Kirim
+    </button>
+  </form>
+</div>

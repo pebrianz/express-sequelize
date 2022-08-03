@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  padding: 0 1rem 1rem 1rem;
+}
+form div {
+  margin-top: 1rem;
+}
+form input {
+  padding: 0.5rem;
+}
+form button {
+  background-color: hsl(250, 35%, 75%);
+  color: hsl(250, 20%, 100%);
+  font-weight: bold;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+main {
+  height: 100%;
+}
